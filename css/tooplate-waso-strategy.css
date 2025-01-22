@@ -674,6 +674,77 @@ strong {
   margin-right: 30px;
 }
 
+/*---------------------------------------
+  Botón de WhatsApp fijo             
+-----------------------------------------*/
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  /* Distancia desde la parte inferior */
+  right: 3%;
+  /* Distancia desde la derecha */
+  z-index: 1000;
+  /* Asegúrate de que esté por encima de otros elementos */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Imagen del logo */
+.whatsapp-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Efecto hover */
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+
+/*
+  carrusel de logos empresas
+*/
+.carousel-conta {
+  width: 100%; /* 100% del ancho de la página */
+  height: 90px; /* Altura fija */
+  overflow: hidden; /* Oculta las imágenes que salen del área visible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel2 {
+  display: flex;
+  gap: 10px; /* Espaciado entre imágenes */
+  animation: scroll 8s linear infinite; /* Animación infinita de desplazamiento */
+}
+
+.carousel2 img {
+  width: 100%; /* Ancho de la imagen */
+  height: 100px; /* Altura de la imagen */
+  object-fit: cover; /* Asegura que la imagen mantenga sus proporciones */
+  border-radius: 5px; /* Opcional: bordes redondeados */
+}
+
+/* Animación de desplazamiento */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 
 /*---------------------------------------
   CUSTOM FORM               
