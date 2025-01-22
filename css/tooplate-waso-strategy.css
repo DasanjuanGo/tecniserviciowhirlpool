@@ -932,6 +932,20 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
+
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    /* Distancia desde la parte inferior */
+    right: 5%;
+    
+  }
+  .carousel2 img {
+    width: 50%; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen mantenga sus proporciones */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+  }
   h1 {
     font-size: 38px;
   }
@@ -984,3 +998,12 @@ strong {
   }
 }
 
+@media screen and (max-width: 380px) {
+
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    /* Distancia desde la parte inferior */
+    right: 20%;
+  }
+}
